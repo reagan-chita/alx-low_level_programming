@@ -1,19 +1,24 @@
-/*
- * File: 4-puts.c
- * Auth: Brennan D Baraban <375@holbertonschool.com>
- */
-
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
-/**
- * main - Prints "Programming is like building a multilingual
- *                puzzle, followed by a new line.
- *
- * Return: Always 0.
- */
-int main(void)
-{
-	puts("\"Programming is like building a multilingual puzzle");
+int main(void) {
+    int n;
+    srand(time(NULL)); // Do not touch this line
 
-	return (0);
+    n = rand();
+
+    printf("Last digit of %d is ", n);
+
+    int last_digit = n % 10;
+
+    if (last_digit > 5) {
+        printf("%d and is greater than 5\n", last_digit);
+    } else if (last_digit == 0) {
+        printf("%d and is 0\n", last_digit);
+    } else {
+        printf("%d and is less than 6 and not 0\n", last_digit);
+    }
+
+    return 0;
 }
