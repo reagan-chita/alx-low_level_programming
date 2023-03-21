@@ -1,7 +1,6 @@
 #include "main.h"
 /**
- * main - Prints "Holberton" followed by a new line.
- *
+ * maain entry point
  * Return: Always 0.
  */
 int main(void)
