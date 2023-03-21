@@ -1,6 +1,15 @@
 #include "main.h"
+/*
+ * File: 0-putchar.c
+ * Auth: Brennan D Baraban
+ *
+ */
+
+#include "0-putchar.h"
+
 /**
- * maain entry point
+ * main - Prints "_putchar" followed by a new line.
+ *
  * Return: Always 0.
  */
 int main(void)
