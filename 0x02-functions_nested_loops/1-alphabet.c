@@ -10,10 +10,14 @@
  */
 void print_alphabet(void)
 {
-	char letter;
+  char c = 'a';   /* Declare a character variable and initialize it with the letter 'a' */
 
-	for (letter = 'a'; letter <= 'z'; letter++)
-		_putchar(letter);
-
-	_putchar('\n');
+  /* Loop through the lowercase alphabet using a while loop */
+  while (c <= 'z')
+  {
+    _putchar(c);   /* Print the current character to stdout using the _putchar function */
+    c++;   /* Increment the character variable to the next letter in the alphabet */
+  }
+  
+  _putchar('\n');   /* Print a newline character to stdout using the _putchar function */
 }
